@@ -1,10 +1,13 @@
-import { Button, Header } from "ui";
+'use client';
+
+import { Header } from "ui";
+import { Button } from "antd";
 
 export default function Page() {
   return (
     <>
       <Header text="Web" />
-      <Button />
+      <Button>Ant!</Button>
     </>
   );
 }
