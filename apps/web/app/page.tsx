@@ -2,6 +2,7 @@
 
 import { Header } from "ui";
 import { Button } from "antd";
+import { PrismaClient } from "database";
 
 export default function Page() {
   return (
