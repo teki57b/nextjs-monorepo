@@ -2,6 +2,7 @@
 
 import { trpc } from "~/utils/trpc";
 import React from "react";
+import { Card } from "antd";
 
 export default function UserList() {
   let { data: users, isLoading, isFetching } = trpc.getUsers.useQuery();
@@ -19,17 +20,19 @@ export default function UserList() {
       }}
     >
       {users?.map((user) => (
-        <div
+        <Card
           key={user.id}
-          style={{ border: "1px solid #ccc", textAlign: "center" }}
+          hoverable
+          style={{ width: 240 }}
+          cover={
+            <img
+              alt={user.name}
+              src={`https://robohash.org/${user.id}?set=set2&size=180x180`}
+            />
+          }
         >
-          <img
-            src={`https://robohash.org/${user.id}?set=set2&size=180x180`}
-            alt={user.name}
-            style={{ height: 180, width: 180 }}
-          />
-          <h3>{user.name}</h3>
-        </div>
+          <Card.Meta title={user.name} />
+        </Card>
       ))}
     </div>
   );
