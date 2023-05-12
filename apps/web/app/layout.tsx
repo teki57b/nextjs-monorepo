@@ -1,4 +1,5 @@
-import { RootStyleRegistry } from "../utils/RootStyleRegistry";
+import { RootStyleRegistry } from "~/utils/root-style-registry";
+import { TrpcProvider } from "~/utils/trpc-provider";
 
 export default function RootLayout({
   children,
@@ -8,7 +9,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <RootStyleRegistry>{children}</RootStyleRegistry>
+        <RootStyleRegistry>
+          <TrpcProvider>{children}</TrpcProvider>
+        </RootStyleRegistry>
       </body>
     </html>
   );

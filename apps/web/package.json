@@ -10,17 +10,25 @@
   },
   "dependencies": {
     "@ant-design/cssinjs": "^1.9.1",
+    "@tanstack/react-query": "^4.29.5",
+    "@tanstack/react-query-devtools": "^4.29.6",
+    "@trpc/client": "^10.25.1",
+    "@trpc/next": "^10.25.1",
+    "@trpc/react-query": "^10.25.1",
+    "@trpc/server": "^10.25.1",
     "antd": "^5.4.7",
     "next": "^13.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "ui": "workspace:*"
+    "superjson": "^1.12.3",
+    "ui": "workspace:*",
+    "zod": "^3.21.4"
   },
   "devDependencies": {
-    "database": "workspace:*",
     "@types/node": "^17.0.12",
     "@types/react": "^18.0.22",
     "@types/react-dom": "^18.0.7",
+    "database": "workspace:*",
     "eslint-config-custom": "workspace:*",
     "tsconfig": "workspace:*",
     "typescript": "^4.5.3"

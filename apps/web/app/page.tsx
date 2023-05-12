@@ -1,14 +1,12 @@
-'use client';
-
 import { Header } from "ui";
 import { Button } from "antd";
-import { PrismaClient } from "database";
+import UserList from "./user-list";
 
 export default function Page() {
   return (
     <>
       <Header text="Web" />
-      <Button>Ant!</Button>
+      <UserList />
     </>
   );
 }
