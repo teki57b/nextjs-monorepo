@@ -13,5 +13,8 @@
     "turbo": "^1.9.3"
   },
   "packageManager": "pnpm@7.15.0",
-  "name": "nextjs-monorepo"
+  "name": "nextjs-monorepo",
+  "dependencies": {
+    "ts-node": "^10.9.1"
+  }
 }
